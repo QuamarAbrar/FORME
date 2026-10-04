@@ -183,6 +183,11 @@ function SectionHeading({
 
 export default function App() {
   useReveals()
+
+  useEffect(() => {
+    document.title = "FORME"
+  }, [])
+
   const [menuOpen, setMenuOpen] = useState(false)
   const [subscribed, setSubscribed] = useState(false)
 
